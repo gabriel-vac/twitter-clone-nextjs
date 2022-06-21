@@ -1,0 +1,2 @@
+npx create-next-app -e with-tailwindcss twitter-2-clone
+yarn add @heroicons/react
