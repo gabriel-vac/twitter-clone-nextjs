@@ -6,12 +6,12 @@ import Widgets from '../components/Widgets';
 
 const Home: NextPage = () => {
   return (
-    <div className="">
+    <div className="mx-auto max-h-screen overflow-hidden lg:max-w-6xl">
       <Head>
         <title>Twitter 2.0</title>
       </Head>
 
-      <main>
+      <main className="grid grid-cols-9">
         {/* Sidebar */}
         <Sidebar />
 
@@ -26,3 +26,11 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const tweets = await fetchTweets();
+
+  return {
+    props: {},
+  };
+};
