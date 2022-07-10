@@ -1,6 +1,9 @@
 npx create-next-app -e with-tailwindcss twitter-2-clone
 yarn add @heroicons/react
 yarn add react-twitter-embed
+yarn add react-timeago
+yarn add --dev @types/react-timeago
+yarn add react-hot-toast
 
 
 obs: tailwind é mobile first
