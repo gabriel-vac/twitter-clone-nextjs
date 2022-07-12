@@ -4,6 +4,7 @@ yarn add react-twitter-embed
 yarn add react-timeago
 yarn add --dev @types/react-timeago
 yarn add react-hot-toast
+yarn add next-auth
 
 
 obs: tailwind é mobile first
