@@ -25,7 +25,7 @@ function TweetBox({ setTweets }: Props) {
   const [imageUrlBoxIsOpen, setImageUrlBoxIsOpen] = useState<boolean>(false);
 
   const addImageToTweet = (
-    e: React.MouseEvent<HTMLButtonElement, MouseEvent>
+    e: React.MouseEvent<HTMLButtonElement, globalThis.MouseEvent>
   ) => {
     e.preventDefault();
 
@@ -59,7 +59,9 @@ function TweetBox({ setTweets }: Props) {
     });
   };
 
-  const handleSubmit = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+  const handleSubmit = (
+    e: React.MouseEvent<HTMLButtonElement, globalThis.MouseEvent>
+  ) => {
     e.preventDefault();
 
     postTweet();
